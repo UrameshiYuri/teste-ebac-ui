@@ -18,6 +18,11 @@ it('Deve Fazer cadastro com faker', () => {
    cy.get('#account_last_name').type(sobrenome)
    cy.get('.woocommerce-Button').click()
    cy.get('.woocommerce-message').should("contain" , "Detalhes da conta modificados com sucesso.")
-
  });
+
+ it.only('deve completar o cadastro com sucesso usando comando customizado', () => {
+  cy.preCadastro(faker.internet.email(), faker.internet.password(), faker.person.firstName(), faker.person.lastName() )
+  cy.get('.woocommerce-message').should("contain" , "Detalhes da conta modificados com sucesso.")
+ });
+ 
 });
