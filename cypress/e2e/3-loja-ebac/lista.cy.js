@@ -2,7 +2,7 @@
 
 describe('deve clicar nos produtos da lista', () => {
 beforeEach(() => {
-  cy.visit("http://lojaebac.ebaconline.art.br/produtos/")
+  cy.visit("produtos")
 });    
     it('Deve selecionar o primeiro produto da lista', () => {
         cy.get('.image-hover').first()

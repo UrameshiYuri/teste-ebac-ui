@@ -2,7 +2,7 @@
 import { faker } from '@faker-js/faker';
 describe('Deve cadastrar contas novas no site da EBAC shop com faker', () => {
 beforeEach(() => {
-    cy.visit("http://lojaebac.ebaconline.art.br/minha-conta/")
+    cy.visit("minha-conta")
 });   
 it('Deve Fazer cadastro com faker', () => {
    var nome = faker.person.firstName() 
