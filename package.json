@@ -4,7 +4,7 @@
   "description": "testando pipeline",
   "main": "index.js",
   "scripts": {
-    "test": "test pipeline",
+    "test": "npx cypress run",
     "cy:run": "cypress run"
   },
   "repository": {
